@@ -1,11 +1,6 @@
-class Solution(object):
-    def threeSum(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: List[List[int]]
-        """
-        print("s")
+def threeSum(numList,target=0):
+    numList.sort()
+    print(numList)
 
-my_instance = Solution()
-
-my_instance.threeSum([10])
+nums = [-1,0,1,2,-1,-4]
+threeSum(nums)
