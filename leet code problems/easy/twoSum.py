@@ -1,4 +1,3 @@
-def twoSum(nums, target):
 """
 Algorithm:
 1. create an empty hashMap
@@ -7,6 +6,7 @@ Algorithm:
 4. if the compliment is available in the hashmap then return the index of both the compliment and current number.
 5. update the hashMap with the current number and the index
 """
+def twoSum(nums, target):
     hashMap = {}
     for index,number in enumerate(nums):
         compliment = target - number
