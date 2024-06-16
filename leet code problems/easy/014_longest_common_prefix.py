@@ -30,7 +30,7 @@ for i < len(str[0])
 
 
 class Solution(object):
-    def longestCommonPrefix(self, word_list: list[str]) -> str:
+    def longestCommonPrefix(self, word_list):
         """
         :type word_list: List[str]
         :rtype: str
