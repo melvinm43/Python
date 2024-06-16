@@ -54,7 +54,13 @@ class Solution(object):
         # If the stack is empty, it means all the opening brackets have been matched and closed properly
         return True if not stack else False
 
+"""
+Complexity Analysis
+Time Complexity: O(n), where n is the length of the input string. Each character is processed exactly once.
+Space Complexity: O(n) in the worst case, where n is the length of the input string. This happens if all characters are opening brackets and are pushed onto the stack.
+In this case the stack will take size n.
 
+"""
 
 #s[i+1] == charMap[s[i]] or
 
