@@ -2,8 +2,21 @@
 
 """
 Complexity Analysis
-Time Complexity: O(n), where n is the number of nodes in the binary tree. Each node is visited exactly once during the traversal.
-Space Complexity: O(h), where h is the height of the tree. This space is primarily used by the call stack due to recursion. For a balanced tree, the space complexity is O(log n), but it can grow to O(n) in the worst case of a skewed tree.
+# Time Complexity O(n):
+# The function visits each node exactly once, resulting in O(n) time complexity,
+# where n is the number of nodes in the tree.
+
+# Space Complexity O(n):
+# 1. Recursion Stack:
+#    - The depth of the recursion stack depends on the height of the tree (h).
+#    - In the worst case (skewed tree), the height h can be O(n), leading to O(n) space complexity.
+#    - In the best case (balanced tree), the height h can be O(log n), leading to O(log n) space complexity.
+# 2. Output List:
+#    - The output list stores the values of all n nodes, resulting in O(n) space complexity.
+
+# Overall Space Complexity:
+# - Worst Case: O(n) for the recursion stack + O(n) for the output list = O(n)
+# - Best Case: O(log n) for the recursion stack + O(n) for the output list = O(n)
 """
 class TreeNode(object):
     def __init__(self, val=0, left=None, right=None):
